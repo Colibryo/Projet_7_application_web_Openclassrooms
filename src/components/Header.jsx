@@ -6,7 +6,7 @@ import "../styles/Header.css"
 function Header() {
   return (
     <header className="headerContainer">
-      <img src={logoHeader} alt="logo-kasa" className="logo" />
+      <img src={logoHeader} alt="logo-kasa" className="logoHeader" />
       <nav className="navigationContainer">
         <ul className="navigationList">
           <li className="listElements">

@@ -1,0 +1,80 @@
+.wrapperCollapse {
+  margin: auto;
+  width: 71%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  padding: 2.063em 0 2.875em 0;
+  width: 70%;
+  border: none;
+  text-align: left;
+  outline: none;
+}
+/*box des boutons*/
+.collapseContainer {
+  width: 100%;
+  font-weight: 400;
+  margin: 1em;
+  background: #f7f7f7;
+  color: #ff6060;
+  border-radius: 5px;
+}
+
+.collapseButton {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 2.938em;
+  padding: 1em;
+  background: #ff6060;
+  color: #ffffff;
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+.collapseButton:hover {
+  cursor: grab;
+}
+
+.textContainer {
+  width: 100%;
+}
+
+.collapseText {
+  padding: 2.25em 1.688em 1.188em 1.125em;
+  width: auto;
+  font-size: 24px;
+  line-height: 142.6%;
+  text-align: justify;
+}
+
+@media all and (max-width: 375px) {
+  .wrapperCollapse {
+    width: 89.3%;
+  }
+
+  .collapseContainer {
+    margin: 1em 0 1em 0;
+  }
+
+  .collapseButton {
+    height: 1.875em;
+    font-size: 0.813em;
+  }
+  .vectorButton {
+    width: 0.95em;
+    height: 0.95em;
+  }
+
+  .collapseText {
+    padding: 2.25em 1.688em 1.188em 1.125em;
+    width: auto;
+    font-size: 0.75em;
+    line-height: 142.6%;
+  }
+}
