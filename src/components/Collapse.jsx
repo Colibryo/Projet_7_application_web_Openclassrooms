@@ -1,6 +1,6 @@
 import { useState } from "react"
-import vectorUp from "../assets/vectorUp.svg"
-import vectorDown from "../assets/vectorDown.svg"
+import upArrow from "../assets/upArrow.svg"
+import downArrow from "../assets/downArrow.svg"
 import "../styles/Collapse.css"
 
 function Collapse({ name, children }) {
@@ -15,9 +15,9 @@ function Collapse({ name, children }) {
       <button onClick={handleCollapse} className="collapseButton">
         {name}{" "}
         {open ? (
-          <img src={vectorUp} alt="icon-vecteur" className="vectorButton" />
+          <img src={upArrow} alt="icon-vecteur" className="buttonArrow" />
         ) : (
-          <img src={vectorDown} alt="icon-vecteur" className="vectorButton" />
+          <img src={downArrow} alt="icon-vecteur" className="buttonArrow" />
         )}
       </button>
       {open && <div>{children}</div>}

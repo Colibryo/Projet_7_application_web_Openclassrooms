@@ -38,7 +38,7 @@
 }
 
 .collapseButton:hover {
-  cursor: grab;
+  cursor: pointer;
 }
 
 .textContainer {
@@ -66,7 +66,7 @@
     height: 1.875em;
     font-size: 0.813em;
   }
-  .vectorButton {
+  .buttonArrow {
     width: 0.95em;
     height: 0.95em;
   }

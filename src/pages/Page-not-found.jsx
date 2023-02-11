@@ -1,10 +1,20 @@
+import { NavLink } from "react-router-dom"
+import "../styles/Page-note-found.css"
+
 function Error() {
-    return (
+  return (
+    <div className="pageErrorContainer">
+      <h1 className="titlePageError">404</h1>
+      <h2 className="subtitlePageError">
+        Oups! La page que vous demandez n'existe pas.
+      </h2>
       <div>
-        <h1>404</h1>
-        <h2>Oups! La page que vous demandez n'existe pas.</h2>
+        <NavLink to="/" className="linkToHome">
+          Retour à la page d'accueil
+        </NavLink>
       </div>
-    )
-  }
-  
-  export default Error
+    </div>
+  )
+}
+
+export default Error
