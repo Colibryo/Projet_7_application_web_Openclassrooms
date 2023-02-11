@@ -2,6 +2,8 @@ import { useState } from "react"
 import { useParams } from "react-router-dom"
 import { accommodationsList } from "../datas/accommodationsList"
 import Collapse from "../components/Collapse"
+import TagName from "../components/TagName"
+import Host from "../components/Host"
 import SlideShow from "../components/SlideShow"
 import Footer from "../components/Footer"
 
@@ -46,8 +48,29 @@ function Accommodations() {
         lengthTabPictures={lengthTabPictures}
         compteur={compteur}
       />
+      <h1>{dataById.title}</h1>
+      <h2>{dataById.location}</h2>
 
-      <Collapse />
+      <TagName tagName={dataById.tags} />
+
+      <Host host={dataById.host.name} hostImage={dataById.host.picture} />
+
+      <Collapse name={"Description"}>
+        <div className="textContainer">
+          <p className="collapseText">{dataById.description}</p>
+        </div>
+      </Collapse>
+      <Collapse name={"Equipements"}>
+        <div className="textContainer">
+          <ul>
+            {dataById.equipments.map((elements, index) => (
+              <li key={index} className="collapseText">
+                {elements}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </Collapse>
       <Footer />
     </div>
   )

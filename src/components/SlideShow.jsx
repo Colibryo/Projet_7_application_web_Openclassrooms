@@ -1,4 +1,3 @@
-//import { useState } from "react"
 import "../styles/SlideShow.css"
 import previousArrow from "../assets/previousArrow.svg"
 import nextArrow from "../assets/nextArrow.svg"
