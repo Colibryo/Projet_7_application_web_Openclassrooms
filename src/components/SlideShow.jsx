@@ -19,14 +19,16 @@ function SlideShow({
             {compteur + 1}/{lengthTabPictures + 1}
           </p>
         </div>
-        <div className="arrowContainer">
-          <button onClick={handleClickPrevious} className="previousArrow">
-            <img src={previousArrow} alt="previous-arrow" />
-          </button>
-          <button onClick={handleClickNext} className="nextArrow">
-            <img src={nextArrow} alt="next-arrow" />
-          </button>
-        </div>
+        {lengthTabPictures > 1 ? (
+          <div className="arrowContainer">
+            <button onClick={handleClickPrevious} className="previousArrow">
+              <img src={previousArrow} alt="previous-arrow" />
+            </button>
+            <button onClick={handleClickNext} className="nextArrow">
+              <img src={nextArrow} alt="next-arrow" />
+            </button>
+          </div>
+        ) : null}
       </div>
     </div>
   )

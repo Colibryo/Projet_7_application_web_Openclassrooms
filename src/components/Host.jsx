@@ -1,8 +1,8 @@
 export default function Host({ host, hostImage }) {
   return (
     <div>
-      <h2>{host}</h2>
-      <img src={hostImage} alt={host} />
+      <p>{host}</p>
+      <img src={hostImage} alt="le-propriétaire" />
     </div>
   )
 }

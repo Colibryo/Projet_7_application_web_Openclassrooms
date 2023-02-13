@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom"
 import { accommodationsList } from "../datas/accommodationsList"
 import Collapse from "../components/Collapse"
 import TagName from "../components/TagName"
+import Ratings from "../components/Ratings"
 import Host from "../components/Host"
 import SlideShow from "../components/SlideShow"
 import Footer from "../components/Footer"
@@ -10,7 +11,6 @@ import Footer from "../components/Footer"
 function Accommodations() {
   const { id } = useParams()
 
-  //state
   const dataById = accommodationsList.find((element) => {
     return element.id === id
   })
@@ -54,6 +54,8 @@ function Accommodations() {
       <TagName tagName={dataById.tags} />
 
       <Host host={dataById.host.name} hostImage={dataById.host.picture} />
+
+      <Ratings numberRedStar={dataById.rating} />
 
       <Collapse name={"Description"}>
         <div className="textContainer">
