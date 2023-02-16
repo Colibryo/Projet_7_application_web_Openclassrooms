@@ -7,8 +7,8 @@ function Cards() {
     <div>
       <div className="galleryContainer">
         {accommodationsList.map(({ id, cover, title }) => (
-          <NavLink to={`/Accomodations/${id}`} className="cards">
-            <div key={id} className="cardsImg">
+          <NavLink key={id} to={`/Accomodations/${id}`} className="cards">
+            <div className="cardsImg">
               <img src={cover} alt={title} className="cardsImg" />
               <h2 className="cardTitle"> {title}</h2>
             </div>

@@ -1,8 +1,8 @@
 .headerContainer {
   margin: auto;
   margin-top: 2.5em;
-  margin-bottom: 3.938em;
-  padding: 40px 0 40px;
+  margin-bottom: 0;
+  padding: 2.5em 0 2.5ems;
   width: 86%;
   height: 68px;
   display: flex;

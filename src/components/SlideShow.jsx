@@ -15,17 +15,27 @@ function SlideShow({
       <div className="slideContainer">
         <div className="slideShowContainer">
           <img src={dataPictures} alt={dataTitle} className="slideShowImg" />
-          <p className="slidePageNumber">
-            {compteur + 1}/{lengthTabPictures + 1}
-          </p>
+          {lengthTabPictures > 1 ? (
+            <p className="slidePageNumber">
+              {compteur + 1}/{lengthTabPictures + 1}
+            </p>
+          ) : null}
         </div>
         {lengthTabPictures > 1 ? (
           <div className="arrowContainer">
             <button onClick={handleClickPrevious} className="previousArrow">
-              <img src={previousArrow} alt="previous-arrow" />
+              <img
+                src={previousArrow}
+                alt="flêche pour accéder à la précédente"
+                className="arrowLeft"
+              />
             </button>
             <button onClick={handleClickNext} className="nextArrow">
-              <img src={nextArrow} alt="next-arrow" />
+              <img
+                src={nextArrow}
+                alt="flêche pour accéder à la prochaine"
+                className="arrowRight"
+              />
             </button>
           </div>
         ) : null}

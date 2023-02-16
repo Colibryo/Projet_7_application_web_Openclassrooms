@@ -6,14 +6,14 @@ import "../styles/Header.css"
 function Header() {
   return (
     <header className="headerContainer">
-      <img src={logoHeader} alt="logo-kasa" className="logoHeader" />
+      <img src={logoHeader} alt="logo kasa" className="logoHeader" />
       <nav className="navigationContainer">
         <ul className="navigationList">
           <li className="listElements">
             <NavLink to="/">Accueil</NavLink>
           </li>
           <li className="listElements">
-            <NavLink to="/About">A propos</NavLink>
+            <NavLink to="/about">A propos</NavLink>
           </li>
         </ul>
       </nav>

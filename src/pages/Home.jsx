@@ -2,7 +2,7 @@ import "../styles/Home.css"
 import Banner from "../components/Banner"
 import Footer from "../components/Footer"
 import Cards from "../components/Cards"
-import imgBannerHome from "../assets/imgBannerHome.png"
+import HomeBannerImg from "../assets/homeBannerImg.png"
 
 //affichage de la page d'accueil
 function Home() {
@@ -10,13 +10,13 @@ function Home() {
     <div>
       <div className="bodyContainer">
         <Banner>
-          <div className="bannerContainer">
+          <div className="homeBannerContainer">
             <img
-              src={imgBannerHome}
-              alt="paysage-au-bord-de-l'océan"
-              className="bannerImg"
+              src={HomeBannerImg}
+              alt="paysage au bord de l'océan"
+              className="homeBannerImg"
             />
-            <div className="bannerBackground"></div>
+            <div className="homeBannerBackground"></div>
           </div>
           <h1 className="bannerTitle">Chez vous, partout et ailleurs</h1>
         </Banner>

@@ -1,6 +1,6 @@
 import redStar from "../assets/redStar.svg"
 import greyStar from "../assets/greyStar.svg"
-//import "../styles/Ratings.css"
+import "../styles/Ratings.css"
 
 export default function Ratings({ numberRedStar }) {
   let starsTab = [0, 1, 2, 3, 4]
@@ -37,7 +37,7 @@ export default function Ratings({ numberRedStar }) {
   const sliceRedStarsTab = redStarstab.slice(5 - numberRedStar)
 
   return (
-    <div>
+    <div className="ratingsContainer">
       {numberRedStar === 0
         ? greyStarstab
         : sliceRedStarsTab.concat(sliceGreyStarsTab)}

@@ -1,0 +1,29 @@
+.hostContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.625em;
+}
+
+.hostName {
+  width: min-content;
+  font-size: 1.125em;
+  text-align: right;
+  color: #ff6060;
+}
+
+.hostImage {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+}
+
+@media all and (max-width: 375px) {
+  .hostName {
+    font-size: 0.75em;
+  }
+  .hostImage {
+    width: 2em;
+    height: 2em;
+  }
+}

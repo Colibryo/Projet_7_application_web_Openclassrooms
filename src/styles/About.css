@@ -1,0 +1,61 @@
+.aboutContainer,
+.wrapperBanner {
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutContainer {
+  margin-top: 3.085em;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.wrapperBanner {
+  width: 86%;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutCollapseContainer {
+  width: 72%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 31px;
+  margin: auto;
+  margin-top: 2.063em;
+  padding: 0 0 2.875em 0;
+  border-radius: 5px;
+}
+.aboutCollapseContainer .wrapperCollapse {
+  background: #f7f7f7;
+}
+
+.aboutCollapseTextContainer {
+  width: 100%;
+  padding: 2.25em 1.688em 1.188em 1.125em;
+}
+
+.aboutCollapseText {
+  color: #ff6060;
+  font-size: 1.5em;
+}
+
+.aboutCollapseContainer button {
+  position: relative;
+  font-size: 1.5em;
+  border-radius: 5px;
+}
+
+@media all and (max-width: 375px) {
+  .aboutContainer {
+    width: 86%;
+  }
+  .wrapperBanner {
+    width: 100%;
+  }
+}

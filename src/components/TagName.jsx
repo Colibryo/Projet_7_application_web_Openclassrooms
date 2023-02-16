@@ -1,8 +1,8 @@
-//import "../styles/tagName.css"
+import "../styles/TagName.css"
 
 export default function TagName({ tagName }) {
   return (
-    <ul>
+    <ul className="tagNameContainer">
       {tagName.map((elements, index) => (
         <li key={index} className="tagName">
           {elements}

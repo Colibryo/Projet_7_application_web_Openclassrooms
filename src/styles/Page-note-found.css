@@ -3,23 +3,27 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+
   align-items: center;
   color: #ff6060;
 }
 
 .titlePageError {
+  display: flex;
+  align-items: center;
   width: auto;
-  height: 298px;
+  height: 263px;
+  margin-top: 174.37px;
+  text-align: center;
+  text-align: center;
   font-weight: 700;
   font-size: 18em;
-  line-height: 142.6%;
 }
 
 .subtitlePageError {
   width: auto;
   text-align: center;
-  padding: 66px 0 182px 0;
+  margin: 66px 0 182px 0;
   font-weight: 500;
   font-size: 2.25em;
 }
@@ -28,6 +32,7 @@
   font-weight: 500;
   font-size: 1.125em;
   color: #ff6060;
+  padding-bottom: 5em;
 }
 
 .linkToHome:hover {
@@ -51,15 +56,25 @@
 }
 
 @media all and (max-width: 375px) {
+  .headerContainer {
+    margin: auto;
+    margin: 1.25em;
+  }
+
   .titlePageError {
     font-size: 6em;
+    width: 52.8%;
+    height: 12.2%;
+    padding-top: 1.529em;
   }
   .subtitlePageError {
-    padding: 11px 0 133px 0;
+    width: 100%;
+    padding: 0.688em 3.625em 8.313em 3.563em;
     font-size: 1.125em;
   }
 
   .linkToHome {
     font-size: 0.875em;
+    padding-bottom: 14.688em;
   }
 }

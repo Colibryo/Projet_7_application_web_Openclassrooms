@@ -1,0 +1,118 @@
+.accommodationContainer {
+  padding-top: 1.586em;
+  width: 86%;
+  height: auto;
+  margin: auto;
+}
+
+.containerTitlesLocationHostRating,
+.accommodationTitlesContainer,
+.accommodationLocation {
+  display: flex;
+}
+
+.containerTitlesLocationHostRating {
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.accommodationTitlesContainer {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.accommodationTitle {
+  width: 100%;
+  font-weight: 500;
+  font-size: 36px;
+  color: #ff6060;
+}
+
+.accommodationLocation {
+  font-weight: 500;
+  font-size: 1.125em;
+  align-items: flex-end;
+  color: #ff6060;
+}
+
+.accommodationCollapseWrapper {
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  gap: 4.75em;
+}
+.accommodationCollapseWrapper button {
+  position: relative;
+  top: 10px;
+  font-size: 1em;
+  border-radius: 10px;
+}
+
+.accommodationCollapseContainer {
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+  background: #f7f7f7;
+  color: #ff6060;
+  border-radius: 10px;
+}
+
+.accommodationCollapseContainer,
+.accommodationCollapseText {
+  font-size: 1.125em;
+  border-radius: 10px;
+}
+
+.accommodationCollapseTextContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.accommodationCollapseText {
+  padding: 2.25em 1.688em 1.188em 1.125em;
+  width: auto;
+  height: 100%;
+  text-align: justify;
+}
+
+@media all and (max-width: 768px) {
+  .containerTitlesLocationHostRating {
+    flex-direction: column;
+  }
+  .wrapperHostRating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 1.5em;
+  }
+  .accommodationCollapseWrapper {
+    flex-direction: column;
+  }
+}
+@media all and (max-width: 375px) {
+  .accommodationTitle {
+    font-weight: 500;
+    font-size: 1.125em;
+    line-height: 142.6%;
+  }
+  .accommodationLocation {
+    font-size: 0.875em;
+  }
+  .accommodationCollapseWrapper {
+    flex-direction: column;
+    gap: 1.25em;
+  }
+  .collapseContainer {
+    margin: 20px 0 0 0;
+  }
+
+  .accommodationCollapseContainer,
+  .accommodationCollapseText {
+    font-size: 0.813em;
+  }
+  .accommodationCollapseText {
+    font-size: 0.75em;
+  }
+}

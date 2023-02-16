@@ -11,16 +11,16 @@ function Collapse({ name, children }) {
   }
 
   return (
-    <div className="collapseContainer">
+    <div className="wrapperCollapse">
       <button onClick={handleCollapse} className="collapseButton">
-        {name}{" "}
+        {name}
         {open ? (
-          <img src={upArrow} alt="icon-vecteur" className="buttonArrow" />
+          <img src={upArrow} alt="flèche du bouton" className="buttonArrow" />
         ) : (
-          <img src={downArrow} alt="icon-vecteur" className="buttonArrow" />
+          <img src={downArrow} alt="flèche du bouton" className="buttonArrow" />
         )}
       </button>
-      {open && <div>{children}</div>}
+      {open && <div className="collapseHeight">{children}</div>}
     </div>
   )
 }

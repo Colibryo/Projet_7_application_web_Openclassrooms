@@ -1,0 +1,24 @@
+.ratingsContainer {
+  width: 13.6%;
+  display: flex;
+  padding-top: 1.5em;
+  gap: 0.625em;
+}
+
+@media all and (max-width: 768px) {
+  .ratingsContainer {
+    padding: 1.5em 1.5em 1.5em 0;
+    gap: 0.625em;
+  }
+  .stars {
+    max-width: 20px;
+    max-height: 20px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .stars {
+    max-width: 15px;
+    max-height: 15px;
+  }
+}

@@ -1,6 +1,7 @@
 .footerContainer {
   width: auto;
   height: 209px;
+  margin-top: 25em;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -12,7 +13,7 @@
 .copyright {
   width: 50%;
   height: 46px;
-  margin: 31px 0 29px 0;
+  margin: 1.938em 0 1.813em 0;
   font-weight: 500;
   font-size: 1.5em;
   line-height: 142.6%;
@@ -30,6 +31,10 @@
 }
 
 @media all and (max-width: 375px) {
+  .footerContainer {
+    margin-top: 5em;
+  }
+
   .logoFooter {
     width: 40%;
   }

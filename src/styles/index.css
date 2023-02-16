@@ -5,6 +5,13 @@
   font-family: "Montserrat";
   font-style: normal;
   text-decoration: none;
+  list-style: none;
+}
+h1,
+h2,
+p,
+li {
+  line-height: 142.6%;
 }
 
 body {
