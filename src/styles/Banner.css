@@ -1,3 +1,4 @@
+/*style des conteneurs */
 .container,
 .homeBannerImg,
 .aboutBannerImg,
@@ -36,7 +37,7 @@
   width: 100%;
   object-fit: cover;
 }
-
+/* background qui permet de l'assombrir l'image*/
 .homeBannerBackground,
 .aboutBannerBackground {
   position: absolute;
@@ -57,7 +58,7 @@
   line-height: 142.6%;
   color: #ffffff;
 }
-
+/*version tablette*/
 @media all and (max-width: 768px) {
   .container,
   .homeBannerContainer,
@@ -85,7 +86,7 @@
     font-size: 2em;
   }
 }
-
+/*version mobile*/
 @media all and (max-width: 375px) {
   .homeBannerContainer,
   .homeBannerImg {
@@ -104,8 +105,7 @@
 
   .bannerTitle {
     text-align: left;
-    padding: 1.938em 6.375em 2em 1em;
-    max-width: 296px;
+    padding: 1.938em 5em 2em 1em;
     font-size: 1.5em;
   }
 

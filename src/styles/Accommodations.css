@@ -4,7 +4,8 @@
   height: auto;
   margin: auto;
 }
-
+/*utilisation de flexbox pour les conteneurs 
+en vue des versions tablette et mobile*/
 .containerTitlesLocationHostRating,
 .accommodationTitlesContainer,
 .accommodationLocation {
@@ -15,7 +16,7 @@
   justify-content: space-between;
   padding-top: 30px;
 }
-
+/*conteneur du titre du logement*/
 .accommodationTitlesContainer {
   align-items: flex-start;
   flex-direction: column;
@@ -43,6 +44,7 @@
   height: 100%;
   gap: 4.75em;
 }
+/*ajustement du style des boutons des collapse pour cette page*/
 .accommodationCollapseWrapper button {
   position: relative;
   top: 10px;
@@ -76,11 +78,12 @@
   height: 100%;
   text-align: justify;
 }
-
+/*version tablette*/
 @media all and (max-width: 768px) {
   .containerTitlesLocationHostRating {
     flex-direction: column;
   }
+  /*inversion de l'emplacement des étoiles et du propriétaire*/
   .wrapperHostRating {
     display: flex;
     flex-direction: row-reverse;
@@ -91,23 +94,36 @@
     flex-direction: column;
   }
 }
+/*version mobile*/
 @media all and (max-width: 375px) {
+  .wrapperHostRating {
+    padding: 0;
+  }
+  .containerTitlesLocationHostRating {
+    padding-top: 15px;
+  }
+
   .accommodationTitle {
     font-weight: 500;
     font-size: 1.125em;
     line-height: 142.6%;
   }
   .accommodationLocation {
+    padding: 5px 0 10px 0;
     font-size: 0.875em;
   }
+
   .accommodationCollapseWrapper {
-    flex-direction: column;
+    margin-top: 0;
     gap: 1.25em;
   }
   .collapseContainer {
     margin: 20px 0 0 0;
   }
-
+  .accommodationCollapseWrapper button {
+    height: 30px;
+    border-radius: 5px;
+  }
   .accommodationCollapseContainer,
   .accommodationCollapseText {
     font-size: 0.813em;

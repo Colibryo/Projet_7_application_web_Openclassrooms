@@ -4,14 +4,16 @@ import Banner from "../components/Banner"
 import Collapse from "../components/Collapse"
 import Footer from "../components/Footer"
 import "../styles/About.css"
-
+//fonction pour l'affichage de la page "A propos"
 function About() {
+  //création d'un tableau contenant les noms des boutons des collapse de la page
   const nameButton = ["Fiabilité", "Respect", "Service", "Sécurité"]
 
   return (
     <div>
       <div className="aboutContainer">
         <div className="wrapperBanner">
+          {/* affichage de la bannière */}
           <Banner>
             <div className="aboutBannerContainer">
               <img
@@ -23,6 +25,7 @@ function About() {
             </div>
           </Banner>
         </div>
+        {/* affichage des collapse - les noms des boutons issus du tableau sont envoyés en props */}
         <div className="aboutCollapseContainer">
           <Collapse name={nameButton[0]}>
             <div className="aboutCollapseTextContainer">
@@ -66,6 +69,7 @@ function About() {
           </Collapse>
         </div>
       </div>
+      {/* affichage du footer  */}
       <Footer />
     </div>
   )

@@ -1,3 +1,4 @@
+/*conteneur pour centrer les éléments du slider notamment les numéros de page*/
 .slideContainer {
   margin: auto;
   width: 100%;
@@ -6,13 +7,13 @@
   flex-direction: column;
   align-items: center;
 }
-
+/*conteneur pour les images*/
 .slideShowContainer {
   display: flex;
   justify-content: center;
   width: 100%;
 }
-
+/*ajustement des images*/
 .slideShowImg {
   display: block;
   object-fit: cover;
@@ -26,7 +27,7 @@
   height: 415px;
   border-radius: 25px;
 }
-
+/*positionnement des flêches-bouton et des numéros de pages*/
 .arrowContainer,
 .slidePageNumber {
   position: absolute;
@@ -38,7 +39,7 @@
   width: 84%;
   top: 300px;
 }
-
+/*numéros des pages*/
 .slidePageNumber {
   display: flex;
   align-items: flex-end;
@@ -48,7 +49,7 @@
   font-weight: 500;
   color: #ffffff;
 }
-
+/*flêches-bouton pour le slider*/
 .previousArrow,
 .nextArrow {
   display: block;
@@ -60,7 +61,7 @@
 .nextArrow:hover {
   cursor: pointer;
 }
-
+/*version tablette*/
 @media all and (max-width: 768px) {
   .arrowLeft,
   .arrowRight {
@@ -77,7 +78,7 @@
     top: 300px;
   }
 }
-
+/*version mobile*/
 @media all and (max-width: 375px) {
   .slideShowContainer,
   .slideShowImg {
@@ -92,6 +93,7 @@
     max-width: 0.75em;
     max-height: 1.238em;
   }
+  /*supression des numéros des pages*/
   .slidePageNumber {
     opacity: 0;
   }

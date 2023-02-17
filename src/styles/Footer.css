@@ -1,3 +1,5 @@
+/*conteneur du footer avec centrage
+ des éléments mis en colonne*/
 .footerContainer {
   width: auto;
   height: 209px;
@@ -10,18 +12,22 @@
   color: #ffffff;
 }
 
+.logoFooter {
+  margin: auto;
+  padding-top: 4.125em;
+}
+
 .copyright {
   width: 50%;
   height: 46px;
-  margin: 1.938em 0 1.813em 0;
+  margin: 28.58px 0 29px 0;
   font-weight: 500;
   font-size: 1.5em;
-  line-height: 142.6%;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
 }
-
+/*version tablette*/
 @media all and (max-width: 768px) {
   .copyright {
     width: auto;
@@ -29,14 +35,14 @@
     font-size: 1em;
   }
 }
-
+/*version mobile*/
 @media all and (max-width: 375px) {
   .footerContainer {
-    margin-top: 5em;
+    margin-top: 8em;
   }
 
   .logoFooter {
-    width: 40%;
+    width: 38%;
   }
   .copyright {
     font-size: 0.75em;

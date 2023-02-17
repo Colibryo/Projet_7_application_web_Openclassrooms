@@ -1,3 +1,5 @@
+/*utilisation de flexbox pour positionner logo et
+ liens de navigation en ligne et à l'opposer*/
 .headerContainer {
   margin: auto;
   margin-top: 2.5em;
@@ -9,7 +11,7 @@
   justify-content: space-between;
   align-items: center;
 }
-
+/*partie conteneur et liens de navigation vers les pages*/
 .navigationContainer {
   width: 25%;
   min-width: 19.313em;
@@ -44,7 +46,7 @@
 .listElements a:hover {
   text-decoration-line: underline;
 }
-
+/*version tablette*/
 @media all and (max-width: 768px) {
   .logoHeader {
     width: 30%;
@@ -61,7 +63,7 @@
     font-size: 0.8em;
   }
 }
-
+/*version mobile*/
 @media all and (max-width: 375px) {
   .logoHeader {
     width: 40%;

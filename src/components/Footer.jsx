@@ -1,6 +1,6 @@
 import "../styles/Footer.css"
 import logoFooter from "../assets/logoFooter.svg"
-
+//Fonction permettant de renvoyer le footer dans les pages du site
 function Footer() {
   return (
     <footer className="footerContainer">

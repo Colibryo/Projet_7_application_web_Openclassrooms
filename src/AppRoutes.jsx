@@ -6,7 +6,7 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Accomodations from "./pages/Accommodations"
 import Error from "./pages/Page-not-found"
-
+//Ensemble des routes pour les pages du site ("accueil", "logements", "à propos" et "page d'erreur")
 const App = () => {
   return (
     <Router>

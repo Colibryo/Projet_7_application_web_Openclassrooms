@@ -1,3 +1,4 @@
+/*utilisation de flex pour les conteneurs */
 .aboutContainer,
 .wrapperBanner {
   margin: auto;
@@ -5,7 +6,7 @@
   display: flex;
   flex-direction: column;
 }
-
+/*ajustement des conteneurs*/
 .aboutContainer {
   margin-top: 3.085em;
   width: 100%;
@@ -17,7 +18,7 @@
   justify-content: center;
   align-items: center;
 }
-
+/*conteneur englobant les collapse*/
 .aboutCollapseContainer {
   width: 72%;
   height: 100%;
@@ -44,18 +45,37 @@
   color: #ff6060;
   font-size: 1.5em;
 }
-
+/*Ajustement du style des boutons des collapse pour cette page*/
 .aboutCollapseContainer button {
   position: relative;
   font-size: 1.5em;
   border-radius: 5px;
 }
-
+/*version mobile de la page "A propos"*/
 @media all and (max-width: 375px) {
   .aboutContainer {
     width: 86%;
+    margin-bottom: 10em;
   }
   .wrapperBanner {
     width: 100%;
+  }
+
+  .aboutCollapseContainer {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 5px;
+    gap: 20px;
+  }
+  .aboutCollapseContainer button {
+    font-size: 0.75em;
+    border-radius: 5px;
+  }
+  .aboutCollapseTextContainer {
+    width: 100%;
+    padding: 1.438em 0.432em 3.286em 0.719em;
+  }
+  .aboutCollapseText {
+    font-size: 0.75em;
   }
 }

@@ -1,3 +1,4 @@
+/*mise en ligne des tagName de la page "logements"*/
 .tagNameContainer {
   width: 100%;
   display: flex;
@@ -7,7 +8,7 @@
   padding-top: 1.438em;
   gap: 0.625em;
 }
-
+/*style des TagName contenant un seul mot*/
 .tagName {
   display: inline-block;
   max-width: 25em;
@@ -15,17 +16,19 @@
   height: 1.563em;
   font-size: 0.875em;
   text-align: center;
-  padding: 0.188em 1.375em 0.125em 1.375em;
+  padding: 0.188em 1.375em 0.188em 1.375em;
   color: #ffffff;
   background: #ff6060;
   border-radius: 10px;
 }
-
+/*version mobile*/
 @media all and (max-width: 375px) {
+  .tagNameContainer {
+    padding: 0;
+  }
   .tagName {
     width: auto;
-    min-width: 5.25em;
-    padding: 0.125em 1.875em 0.125em 1.875em;
+    padding: 0 20px 0 20px;
     border-radius: 5px;
     font-size: 0.625em;
   }

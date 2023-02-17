@@ -1,3 +1,5 @@
+/*mise en ligne des images 
+avec un retour en cas de dépassement*/
 .galleryContainer {
   padding: 1em 0 1em 0;
   display: flex;
@@ -11,11 +13,11 @@
   background: #f7f7f7;
   border-radius: 25px;
 }
-
+/*conteneur des cards*/
 .cards {
   margin: 1em;
   width: 30%;
-  min-height: 340px;
+  height: 340px;
   background-color: green;
   background: linear-gradient(
     180deg,
@@ -50,7 +52,7 @@
   box-shadow: 10px 10px 10px #ff6060;
   transform: scale(1.05);
 }
-
+/*adaptation pour les versions desktop/tablettes avec un petit écran*/
 @media all and (max-width: 1024px) {
   .cards {
     width: 40%;
@@ -65,7 +67,7 @@
     font-size: 1em;
   }
 }
-
+/*version tablettes*/
 @media all and (max-width: 768px) {
   .cards {
     width: 60%;
@@ -79,8 +81,9 @@
     font-size: 1em;
   }
 }
-
+/*version mobile*/
 @media all and (max-width: 375px) {
+  /*mise en colonne des photos*/
   .galleryContainer {
     margin: 0;
     width: 100%;

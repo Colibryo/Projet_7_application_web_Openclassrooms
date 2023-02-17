@@ -1,3 +1,4 @@
+/*conteneur des éléments de la page sauf le header et le footer*/
 .bodyContainer {
   margin: auto;
   margin-top: 4.273em;
@@ -8,12 +9,13 @@
   justify-content: center;
   align-items: center;
 }
+/*version tablettes*/
 @media all and (max-width: 768px) {
   .bodyContainer {
     width: 95%;
   }
 }
-
+/*version mobiles*/
 @media all and (max-width: 375px) {
   .bodyContainer {
     width: 90%;

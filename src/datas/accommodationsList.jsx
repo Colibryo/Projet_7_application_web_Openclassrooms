@@ -1,5 +1,6 @@
 // 20230206175751
 // https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P9+React+1/logements.json
+//data pour le site en attendant le backend
 export const accommodationsList = [
   {
     id: "c67ab8a7",

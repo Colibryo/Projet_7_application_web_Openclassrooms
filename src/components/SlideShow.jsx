@@ -1,7 +1,8 @@
 import "../styles/SlideShow.css"
 import previousArrow from "../assets/previousArrow.svg"
 import nextArrow from "../assets/nextArrow.svg"
-
+/*Fonction pour l'affichage du carroussel 
+Prend en paramètre la data issue la page logement*/
 function SlideShow({
   dataPictures,
   dataTitle,
@@ -12,6 +13,8 @@ function SlideShow({
 }) {
   return (
     <div>
+      {/* gestion du numéro de page en fonction du nombre d'images 
+         Rien ne s'affiche si le nombre d'image est nul*/}
       <div className="slideContainer">
         <div className="slideShowContainer">
           <img src={dataPictures} alt={dataTitle} className="slideShowImg" />
@@ -21,6 +24,8 @@ function SlideShow({
             </p>
           ) : null}
         </div>
+        {/* gestion des boutons en fonction du nombre d'images 
+        Aucun bouton si il n'y a qu'une image*/}
         {lengthTabPictures > 1 ? (
           <div className="arrowContainer">
             <button onClick={handleClickPrevious} className="previousArrow">
