@@ -6,7 +6,7 @@ import "../styles/Collapse.css"
  * prenant en paramètre les props "nom" et "contenu" de la page */
 function Collapse({ name, children }) {
   const [open, setOPen] = useState(false)
-
+  //fonction qui passe la valeur à true
   const handleCollapse = () => {
     setOPen(!open)
   }
@@ -14,24 +14,30 @@ function Collapse({ name, children }) {
   return (
     <div className="wrapperCollapse">
       {/* bouton avec changement de direction de son icone flèche */}
-      <button onClick={handleCollapse} className="collapseButton">
+      <button
+        onClick={handleCollapse}
+        className="collapseButton"
+        aria-expanded="false"
+      >
         {name}
         {open ? (
           <img
             src={upArrow}
-            alt="flèche du bouton vers le bas"
+            alt="flèche du bouton tournée vers le haut"
             className="buttonArrow"
           />
         ) : (
           <img
             src={downArrow}
-            alt="flèche du bouton vers le haut"
+            alt="flèche du bouton tournée vers le bas"
             className="buttonArrow"
           />
         )}
         {/* partie accordéon permettant de faire apparaître le contenu */}
       </button>
-      {open && <div className="collapseHeight">{children}</div>}
+      <div className={!open ? "collapseOff" : "collapseOn"}>
+        <div className="collapseHeight">{children}</div>
+      </div>
     </div>
   )
 }

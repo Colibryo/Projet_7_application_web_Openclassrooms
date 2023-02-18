@@ -35,7 +35,7 @@ en vue des versions tablette et mobile*/
   align-items: flex-end;
   color: #ff6060;
 }
-
+/*conteneur du bouton et du contenu du collapse*/
 .accommodationCollapseWrapper {
   margin-top: 1.5em;
   display: flex;
@@ -124,7 +124,7 @@ en vue des versions tablette et mobile*/
     height: 30px;
     border-radius: 5px;
   }
-  .accommodationCollapseContainer,
+  .accommodationCollapseWrapper button,
   .accommodationCollapseText {
     font-size: 0.813em;
   }
