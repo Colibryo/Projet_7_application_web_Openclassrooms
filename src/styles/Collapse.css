@@ -12,7 +12,7 @@
   align-items: center;
   width: 100%;
   height: 47px;
-  padding: 0.813em 1em 0.813em 0.8em;
+  padding: 0.813rem 1rem 0.813rem 0.8rem;
   background: #ff6060;
   color: #ffffff;
 }
@@ -42,16 +42,21 @@
 .buttonArrow {
   position: relative;
   left: 16.06px;
-  padding: 1.054em 1.004em 1.054em 0;
+  padding: 1.054rem 1.004rem 1.054rem 0;
 }
 /*version tablettes*/
-@media all and (max-width: 768px) {
+@media all and (min-width: 768px) and (max-width: 1023px) {
   .collapseHeight {
     height: 100%;
   }
+  .collapseButton {
+    height: 2rem;
+    padding: 5px 11px 5px;
+    font-size: 1rem;
+  }
 }
 /*version mobile*/
-@media all and (max-width: 375px) {
+@media all and (max-width: 767px) {
   .wrapperCollapse {
     margin: 0;
     padding-top: 0;
@@ -59,21 +64,21 @@
   }
 
   .collapseContainer {
-    margin: 1.25em 0 0 0;
+    margin: 1.25rem 0 0 0;
   }
 
   .collapseButton {
-    height: 1.875em;
+    height: 1.875rem;
     padding: 5px 11px 5px;
-    font-size: 0.813em;
-  }
-  .buttonArrow {
-    width: 10%;
+    font-size: 0.813rem;
   }
 
   .collapseText {
-    padding: 2.25em 1.688em 1.188em 1.125em;
+    padding: 2.25rem 1.688rem 1.188rem 1.125rem;
     width: auto;
-    font-size: 0.75em;
+    font-size: 0.75rem;
+  }
+  .buttonArrow {
+    max-width: 2rem;
   }
 }

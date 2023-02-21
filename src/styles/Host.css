@@ -19,12 +19,12 @@
   border-radius: 50%;
 }
 /*version mobile*/
-@media all and (max-width: 375px) {
+@media all and (max-width: 576px) {
   .hostName {
-    font-size: 0.75em;
+    font-size: 0.75rem;
   }
   .hostImage {
-    width: 2em;
-    height: 2em;
+    width: 32px;
+    height: 32px;
   }
 }

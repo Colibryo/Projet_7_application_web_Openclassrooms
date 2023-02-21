@@ -75,11 +75,11 @@
     border-radius: 10px;
   }
   .arrowContainer {
-    top: 300px;
+    top: 250px;
   }
 }
 /*version mobile*/
-@media all and (max-width: 375px) {
+@media all and (max-width: 576px) {
   .slideShowContainer,
   .slideShowImg {
     height: 15.938em;

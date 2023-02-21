@@ -1,5 +1,4 @@
 .accommodationContainer {
-  padding-top: 1.586em;
   width: 86%;
   height: auto;
   margin: auto;
@@ -14,7 +13,7 @@ en vue des versions tablette et mobile*/
 
 .containerTitlesLocationHostRating {
   justify-content: space-between;
-  padding-top: 30px;
+  padding-top: 8rem;
 }
 /*conteneur du titre du logement*/
 .accommodationTitlesContainer {
@@ -25,13 +24,13 @@ en vue des versions tablette et mobile*/
 .accommodationTitle {
   width: 100%;
   font-weight: 500;
-  font-size: 36px;
+  font-size: 2.25rem;
   color: #ff6060;
 }
 
 .accommodationLocation {
   font-weight: 500;
-  font-size: 1.125em;
+  font-size: 1.125rem;
   align-items: flex-end;
   color: #ff6060;
 }
@@ -48,7 +47,7 @@ en vue des versions tablette et mobile*/
 .accommodationCollapseWrapper button {
   position: relative;
   top: 10px;
-  font-size: 1em;
+  font-size: 1rem;
   border-radius: 10px;
 }
 
@@ -63,7 +62,7 @@ en vue des versions tablette et mobile*/
 
 .accommodationCollapseContainer,
 .accommodationCollapseText {
-  font-size: 1.125em;
+  font-size: 1.125rem;
   border-radius: 10px;
 }
 
@@ -73,13 +72,13 @@ en vue des versions tablette et mobile*/
 }
 
 .accommodationCollapseText {
-  padding: 2.25em 1.688em 1.188em 1.125em;
+  padding: 2.5rem 0.75rem 3.3125rem 1.25rem;
   width: auto;
   height: 100%;
-  text-align: justify;
+  text-align: left;
 }
 /*version tablette*/
-@media all and (max-width: 768px) {
+@media all and (max-width: 1023px) {
   .containerTitlesLocationHostRating {
     flex-direction: column;
   }
@@ -95,7 +94,7 @@ en vue des versions tablette et mobile*/
   }
 }
 /*version mobile*/
-@media all and (max-width: 375px) {
+@media all and (max-width: 767px) {
   .wrapperHostRating {
     padding: 0;
   }
@@ -110,12 +109,12 @@ en vue des versions tablette et mobile*/
   }
   .accommodationLocation {
     padding: 5px 0 10px 0;
-    font-size: 0.875em;
+    font-size: 0.875rem;
   }
 
   .accommodationCollapseWrapper {
     margin-top: 0;
-    gap: 1.25em;
+    gap: 1.25rem;
   }
   .collapseContainer {
     margin: 20px 0 0 0;
@@ -126,9 +125,15 @@ en vue des versions tablette et mobile*/
   }
   .accommodationCollapseWrapper button,
   .accommodationCollapseText {
-    font-size: 0.813em;
+    font-size: 1.125rem;
+  }
+  .accommodationCollapseWrapper button {
+    font-size: 0.825rem;
   }
   .accommodationCollapseText {
-    font-size: 0.75em;
+    font-size: 0.75rem;
+  }
+  .accommodationCollapseWrapper li {
+    font-size: 0.75rem;
   }
 }

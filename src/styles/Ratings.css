@@ -2,14 +2,14 @@
 .ratingsContainer {
   width: 13.6%;
   display: flex;
-  padding-top: 1.5em;
-  gap: 0.625em;
+  padding-top: 1.5rem;
+  gap: 10px;
 }
 /*version tablette*/
 @media all and (max-width: 768px) {
   .ratingsContainer {
-    padding: 1.5em 1.5em 1.5em 0;
-    gap: 0.625em;
+    padding: 1.5rem 1.5rem 1.5rem 0;
+    gap: 0.625rem;
   }
   .stars {
     max-width: 20px;
@@ -17,7 +17,7 @@
   }
 }
 /*version mobile*/
-@media all and (max-width: 375px) {
+@media all and (max-width: 576px) {
   .stars {
     max-width: 15px;
     max-height: 15px;

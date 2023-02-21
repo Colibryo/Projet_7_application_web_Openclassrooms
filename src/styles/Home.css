@@ -1,7 +1,7 @@
 /*conteneur des éléments de la page sauf le header et le footer*/
 .bodyContainer {
   margin: auto;
-  margin-top: 4.273em;
+  margin-top: 63px;
   width: 86%;
   height: 100%;
   display: flex;
@@ -10,14 +10,22 @@
   align-items: center;
 }
 /*version tablettes*/
-@media all and (max-width: 768px) {
+@media all and (max-width: 1023px) {
   .bodyContainer {
-    width: 95%;
+    width: 90%;
   }
 }
 /*version mobiles*/
-@media all and (max-width: 375px) {
+@media all and (max-width: 576px) {
   .bodyContainer {
-    width: 90%;
+    width: 93%;
+    /*min-width: 335px;*/
+    margin: auto;
+    margin-top: 1rem;
+  }
+}
+@media all and (max-width: 480px) {
+  .cardTitle {
+    width: auto;
   }
 }

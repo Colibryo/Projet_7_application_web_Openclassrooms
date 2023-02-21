@@ -21,7 +21,7 @@
 .aboutBannerImg,
 .homeBannerBackground,
 .aboutBannerBackground {
-  height: 13.938em;
+  height: 223px;
 }
 
 .homeBannerContainer,
@@ -54,12 +54,11 @@
   margin: 0;
   text-align: center;
   font-weight: 500;
-  font-size: 3em;
-  line-height: 142.6%;
+  font-size: 3rem;
   color: #ffffff;
 }
 /*version tablette*/
-@media all and (max-width: 768px) {
+@media all and (max-width: 1023px) {
   .container,
   .homeBannerContainer,
   .homeBannerImg,
@@ -71,23 +70,18 @@
     width: 100%;
   }
 
-  .homeBannerContainer,
-  .homeBannerImg,
   .homeBannerBackground {
-    height: 10em;
-  }
-
-  .homeBannerBackground {
-    width: 95%;
+    width: 90%;
   }
 
   .bannerTitle {
-    width: 90%;
-    font-size: 2em;
+    width: 86%;
+    font-size: 2rem;
   }
 }
+
 /*version mobile*/
-@media all and (max-width: 375px) {
+@media all and (max-width: 576px) {
   .homeBannerContainer,
   .homeBannerImg {
     width: 100%;
@@ -96,28 +90,23 @@
   .homeBannerContainer,
   .homeBannerImg,
   .homeBannerBackground {
-    height: 6.938em;
+    height: 6.938rem;
     border-radius: 10px;
   }
   .homeBannerBackground {
-    width: 90%;
+    width: 93%;
   }
-
   .bannerTitle {
     text-align: left;
-    padding: 1.938em 5em 2em 1em;
-    font-size: 1.5em;
-  }
-
-  .aboutBannerContainer,
-  .aboutBannerImg {
-    width: 100%;
+    font-size: 1.5rem;
+    left: 9.6%;
+    padding: 0 5rem 0 0;
   }
 
   .aboutBannerContainer,
   .aboutBannerImg,
   .aboutBannerBackground {
-    height: 13.938em;
+    height: 13.938rem;
     border-radius: 10px;
   }
   .aboutBannerBackground {

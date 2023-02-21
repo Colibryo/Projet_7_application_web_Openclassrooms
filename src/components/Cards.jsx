@@ -6,16 +6,20 @@ function Cards() {
   return (
     <div>
       <div className="galleryContainer">
-        {/* récupération de la data et lien vers les 
+        <div className="cardsContainer">
+          {/* récupération de la data et lien vers les 
          pages du logement en fonction de l'id*/}
-        {accommodationsList.map(({ id, cover, title }) => (
-          <NavLink key={id} to={`/Accomodations/${id}`} className="cards">
-            <div className="cardsImg">
-              <img src={cover} alt={title} className="cardsImg" />
-              <h2 className="cardTitle"> {title}</h2>
-            </div>
-          </NavLink>
-        ))}
+          {accommodationsList.map(({ id, cover, title }) => (
+            <NavLink key={id} to={`/Accomodations/${id}`} className="cards">
+              <div className="card">
+                <div className="cardsImg">
+                  <img src={cover} alt={title} className="cardsImg" />
+                  <h2 className="cardTitle"> {title}</h2>
+                </div>
+              </div>
+            </NavLink>
+          ))}
+        </div>
       </div>
     </div>
   )

@@ -1,23 +1,34 @@
 /*mise en ligne des images 
 avec un retour en cas de dépassement*/
 .galleryContainer {
-  padding: 1em 0 1em 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content: space-between;
+  align-items: center;
   justify-content: center;
   width: 100%;
   height: auto;
-  margin: 2.688em 0 2.688em 0;
+  margin: 43px 0 43px 0;
   background: #f7f7f7;
   border-radius: 25px;
 }
+.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin: 56px 50px 56px 50px;
+  background: #f7f7f7;
+  border-radius: 25px;
+  gap: 50px;
+}
 /*conteneur des cards*/
 .cards {
-  margin: 1em;
-  width: 30%;
-  height: 340px;
+  width: 23.61vw;
+  height: 23.61vw;
   background-color: green;
   background: linear-gradient(
     180deg,
@@ -32,18 +43,22 @@ avec un retour en cas de dépassement*/
 
 .cardsImg {
   position: relative;
-  width: 100%;
-  height: 340px;
+  width: 23.61vw;
+  height: 23.61vw;
+
   border-radius: 10px;
 }
 
 .cardTitle {
-  position: relative;
-  bottom: 4.5em;
-  left: 1em;
-  width: 70%;
-  font-weight: bold;
-  font-size: 1.25em;
+  position: absolute;
+  width: 300px;
+  height: 52px;
+  font-weight: 500;
+  font-size: 1.125rem;
+  left: 0;
+  bottom: 0.5%;
+
+  margin: 20px;
   color: #ffffff;
 }
 
@@ -52,57 +67,100 @@ avec un retour en cas de dépassement*/
   box-shadow: 10px 10px 10px #ff6060;
   transform: scale(1.05);
 }
-/*adaptation pour les versions desktop/tablettes avec un petit écran*/
-@media all and (max-width: 1024px) {
-  .cards {
-    width: 40%;
-    max-height: 20em;
+
+/*version desktop - ajustement pour plus petits écrans*/
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  .cardsContainer {
+    gap: 20px;
   }
+
+  .cards,
   .cardsImg {
-    max-height: 20em;
+    position: relative;
+    min-width: 340px;
+    min-height: 340px;
+    border-radius: 10px;
   }
   .cardTitle {
-    width: 90%;
-    bottom: 4.5em;
-    font-size: 1em;
+    bottom: 0.1%;
+    padding: 0 0 10px 10px;
   }
 }
+
 /*version tablettes*/
-@media all and (max-width: 768px) {
-  .cards {
-    width: 60%;
-    max-height: 15em;
+@media all and (max-width: 1023px) {
+  .cardsContainer {
+    gap: 20px;
   }
+  .cards,
   .cardsImg {
-    max-height: 15em;
+    position: relative;
+    min-width: 340px;
+    min-height: 340px;
+    border-radius: 10px;
   }
+
   .cardTitle {
-    bottom: 4.5em;
-    font-size: 1em;
+    font-size: 1.25rem;
+    left: 0;
+    bottom: 0.5%;
+    width: 300px;
+    margin: 0 0 10px 10px;
+    padding: 0 0 10px 10px;
   }
 }
-/*version mobile*/
-@media all and (max-width: 375px) {
+/*versions mobile*/
+@media all and (max-width: 576px) {
   /*mise en colonne des photos*/
   .galleryContainer {
-    margin: 0;
-    width: 100%;
-    background-color: #ffffff;
     flex-direction: column;
-    gap: 1em;
+    align-content: center;
+    background-color: #ffffff;
+    padding-top: 1.375rem;
+    margin: auto;
   }
-  .cards {
-    margin: 0;
 
-    width: 100%;
-    height: 15.938em;
+  .cardsContainer {
+    flex-direction: column;
+    align-content: center;
+    background-color: #ffffff;
+    margin: 0;
   }
+  .cardsContainer {
+    gap: 20px;
+  }
+  .cardsContainer {
+    margin-top: 0;
+  }
+
+  .cards,
+  .card,
   .cardsImg {
     width: 100%;
-    height: 15.938em;
+    min-width: 200px;
+    min-height: 255px;
+    margin: 0;
   }
+
   .cardTitle {
-    width: 80%;
-    bottom: 3.5em;
+    font-size: 1.125rem;
+    width: auto;
+    max-width: 250px;
+    bottom: 0.2%;
+    margin: 0 0 10px 10px;
+    padding: 0 0 10px 10px;
+  }
+}
+@media all and (max-width: 480px) {
+  .cardTitle {
+    width: auto;
+  }
+}
+@media all and (max-width: 375px) {
+  .cardTitle {
+    margin: 0 0 5px 5px;
+    padding: 0 0 5px 5px;
+    bottom: 3%;
+    font-size: 0.9rem;
   }
 }

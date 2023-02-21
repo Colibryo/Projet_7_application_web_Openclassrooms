@@ -17,7 +17,7 @@
   text-align: center;
   text-align: center;
   font-weight: 700;
-  font-size: 18em;
+  font-size: 18rem;
 }
 
 .subtitlePageError {
@@ -25,14 +25,14 @@
   text-align: center;
   margin: 66px 0 182px 0;
   font-weight: 500;
-  font-size: 2.25em;
+  font-size: 2.25rem;
 }
 
 .linkToHome {
   font-weight: 500;
-  font-size: 1.125em;
+  font-size: 1.125rem;
   color: #ff6060;
-  padding-bottom: 5em;
+  padding-bottom: 5rem;
 }
 
 .linkToHome:hover {
@@ -41,44 +41,39 @@
 /*version tablettes*/
 @media all and (max-width: 768px) {
   .titlePageError {
-    font-size: 10em;
+    font-size: 10rem;
   }
 
   .subtitlePageError {
     width: auto;
-    font-size: 2em;
+    font-size: 2rem;
   }
 
   .linkToHome {
     width: auto;
-    font-size: 1em;
+    font-size: 1rem;
   }
 }
 /*version mobiles*/
-@media all and (max-width: 375px) {
-  .headerContainer {
-    margin: auto;
-    margin: 1.25em;
-  }
-
+@media all and (max-width: 576px) {
   .titlePageError {
-    font-size: 6em;
-    max-width: 12.375em;
-    max-height: 6.188em;
+    font-size: 6rem;
+    max-width: 12.375rem;
+    max-height: 6.188rem;
     margin-top: 0;
-    padding-top: 1.529em;
+    padding-top: 1.529rem;
   }
   .subtitlePageError {
     width: 100%;
-    padding: 0.688em 3.625em 133px 3.563em;
+    padding: 0.688rem 3.625rem 8.3125rem 3.563rem;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 1.125em;
+    font-size: 1.125rem;
   }
 
   .linkToHome {
-    font-size: 0.875em;
-    padding-bottom: 14.688em;
+    font-size: 0.875rem;
+    padding-bottom: 14.688rem;
     margin-top: 0;
   }
 }
