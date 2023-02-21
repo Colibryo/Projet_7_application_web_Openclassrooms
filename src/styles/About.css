@@ -31,26 +31,25 @@
   margin: auto;
   margin-top: 2.063rem;
   padding: 0 0 2.875rem 0;
-  border-radius: 5px;
-}
-.aboutCollapseContainer .wrapperCollapse {
-  background: #f7f7f7;
 }
 
-.aboutCollapseTextContainer {
-  width: 100%;
-  padding: 2.25rem 1.688rem 1.188rem 1.125rem;
+.aboutCollapseContainer .collapseContainer {
+  padding: 2.25rem 1.6875rem 1.1875rem 1.125rem;
+}
+.aboutCollapseContainer .collapseContainer .collapseOn {
+  border-radius: 50px;
 }
 
-.aboutCollapseText {
-  color: #ff6060;
-  font-size: 1.5rem;
-}
 /*Ajustement du style des boutons des collapse pour cette page*/
 .aboutCollapseContainer button {
+  height: 47px;
   position: relative;
   font-size: 1.5rem;
   border-radius: 5px;
+}
+
+.aboutCollapseContainer p {
+  font-size: 1.5rem;
 }
 /*version mobile de la page "A propos"*/
 @media all and (max-width: 767px) {
@@ -68,15 +67,18 @@
     border-radius: 5px;
     gap: 20px;
   }
+  .aboutCollapseContainer .collapseContainer {
+    margin-top: 0;
+    padding: 1.4375rem 0.432rem 3.28625rem 0.719rem;
+  }
+
   .aboutCollapseContainer button {
+    height: 30px;
     font-size: 0.8125rem;
     border-radius: 5px;
   }
-  .aboutCollapseTextContainer {
-    width: 100%;
-    padding: 1.438rem 0.432rem 3.286rem 0.719rem;
-  }
-  .aboutCollapseText {
+
+  .aboutCollapseContainer p {
     font-size: 0.75rem;
   }
 }

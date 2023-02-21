@@ -4,7 +4,7 @@ import downArrow from "../assets/downArrow.svg"
 import "../styles/Collapse.css"
 /*fonction avec bouton pour la création du collapse
  * prenant en paramètre les props "nom" et "contenu" de la page */
-function Collapse({ name, children }) {
+function Collapse({ nameButton, children }) {
   const [open, setOPen] = useState(false)
   //fonction qui passe la valeur à true
   const handleCollapse = () => {
@@ -19,7 +19,7 @@ function Collapse({ name, children }) {
         className="collapseButton"
         aria-expanded="false"
       >
-        {name}
+        {nameButton}
         {open ? (
           <img
             src={upArrow}
@@ -36,7 +36,9 @@ function Collapse({ name, children }) {
         {/* partie accordéon permettant de faire apparaître le contenu */}
       </button>
       <div className={!open ? "collapseOff" : "collapseOn"}>
-        <div className="collapseHeight">{children}</div>
+        <div className="collapseContainer">
+          <div>{children}</div>
+        </div>
       </div>
     </div>
   )

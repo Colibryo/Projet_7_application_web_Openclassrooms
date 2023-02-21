@@ -75,26 +75,15 @@ function Accommodations() {
         </div>
         {/* affichage des collapse "descriptions" et "équipements" */}
         <div className="accommodationCollapseWrapper">
-          <Collapse name={"Description"}>
-            <div className="accommodationCollapseContainer">
-              <div className="accommodationCollapseTextContainer">
-                <p className="accommodationCollapseText">
-                  {dataById.description}
-                </p>
-              </div>
-            </div>
+          <Collapse nameButton={"Description"}>
+            <p>{dataById.description}</p>
           </Collapse>
-
-          <Collapse name={"Equipements"}>
-            <div className="accommodationCollapseContainer">
-              <div className="accommodationCollapseTextContainer">
-                <ul className="accommodationCollapseText">
-                  {dataById.equipments.map((elements, index) => (
-                    <li key={index}>{elements}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+          <Collapse nameButton={"Equipements"}>
+            <ul>
+              {dataById.equipments.map((elements, index) => (
+                <li key={index}>{elements}</li>
+              ))}
+            </ul>
           </Collapse>
         </div>
       </div>

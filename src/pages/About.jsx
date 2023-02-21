@@ -27,45 +27,36 @@ function About() {
         </div>
         {/* affichage des collapse - les noms des boutons issus du tableau sont envoyés en props */}
         <div className="aboutCollapseContainer">
-          <Collapse name={nameButton[0]}>
-            <div className="aboutCollapseTextContainer">
-              <p className="aboutCollapseText">
-                Les annonces postées sur Kasa garantissent une fiabilité totale.
-                Les photos sont conformes aux logements, et toutes les
-                informations sont régulièrement vérifiées par nos équipes.
-              </p>
-            </div>
+          <Collapse nameButton={nameButton[0]}>
+            <p>
+              Les annonces postées sur Kasa garantissent une fiabilité totale.
+              Les photos sont conformes aux logements, et toutes les
+              informations sont régulièrement vérifiées par nos équipes.
+            </p>
           </Collapse>
-          <Collapse name={nameButton[1]}>
-            <div className="aboutCollapseTextContainer">
-              <p className="aboutCollapseText">
-                La bienveillance fait partie des valeurs fondatrices de Kasa.
-                Tout comportement discriminatoire ou de perturbation du
-                voisinage entraînera une exclusion de notre plateforme.
-              </p>
-            </div>
+          <Collapse nameButton={nameButton[1]}>
+            <p>
+              La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
+              comportement discriminatoire ou de perturbation du voisinage
+              entraînera une exclusion de notre plateforme.
+            </p>
           </Collapse>
-          <Collapse name={nameButton[2]}>
-            <div className="aboutCollapseTextContainer">
-              <p className="aboutCollapseText">
-                Nos équipes se tiennent à votre disposition pour vous fournir
-                une expérience parfaite. N'hésitez pas à nous contacter si vous
-                avez la moindre question.
-              </p>
-            </div>
+          <Collapse nameButton={nameButton[2]}>
+            <p>
+              Nos équipes se tiennent à votre disposition pour vous fournir une
+              expérience parfaite. N'hésitez pas à nous contacter si vous avez
+              la moindre question.
+            </p>
           </Collapse>
-          <Collapse name={nameButton[3]}>
-            <div className="aboutCollapseTextContainer">
-              <p className="aboutCollapseText">
-                La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes
-                que pour les voyageurs, chaque logement correspond aux critères
-                de sécurité établis par nos services. En laissant une note aussi
-                bien à l'hôte qu'au locataire, cela permet à nos équipes de
-                vérifier que les standards sont bien respectés. Nous organisons
-                également des ateliers sur la sécurité domestique pour nos
-                hôtes.
-              </p>
-            </div>
+          <Collapse nameButton={nameButton[3]}>
+            <p>
+              La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que
+              pour les voyageurs, chaque logement correspond aux critères de
+              sécurité établis par nos services. En laissant une note aussi bien
+              à l'hôte qu'au locataire, cela permet à nos équipes de vérifier
+              que les standards sont bien respectés. Nous organisons également
+              des ateliers sur la sécurité domestique pour nos hôtes.
+            </p>
           </Collapse>
         </div>
       </div>
