@@ -21,7 +21,7 @@ const App = () => {
         <Route exact path="/accomodations/:id">
           <Accomodations />
         </Route>
-        <Route path="/*">
+        <Route>
           <Error />
         </Route>
       </Switch>

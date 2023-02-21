@@ -21,7 +21,7 @@ function Accommodations() {
   //redirection vers la page d'erreur si l'id récupéré avec useparams est incorrect (aucune data trouvée)
   let indexPictures = 0
   if (dataById === undefined) {
-    return <Redirect to="/*" />
+    return <Redirect to="/Error" />
   } else {
     indexPictures = dataById.pictures[compteur]
   }
